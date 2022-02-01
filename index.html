@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | QR code component</title>
+  <style>  
+  @import url('https://fonts.googleapis.com/css2?family=Corinthia&family=Outfit:wght@400;700&display=swap');
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color: rgb(216, 235, 245);
+  }
+  h2, p{
+    font-family: Outfit;
+  }
+
+  #content-container{
+    /* make it stay in the center even when in desktop mode */
+    margin: 20% 5%;
+    border: solid Light gray hsl(212, 45%, 89%);
+    border-radius: 20px;
+    background-color: white;
+  }
+
+  #qr-code-container img{
+    margin: 20px 20px 30px 20px;
+    width: 90%;
+    border-radius: 10px;
+  }
+
+  #header-print-container{
+    text-align: center;
+    margin: auto 30px 30px;
+    padding-bottom: 30px;
+      /* space for the bottom p */
+  }
+  #header-print-container h2{
+    margin-bottom: 20px;
+  }
+  #header-print-container p{
+    font-size: 15px;
+    font-weight: 400;
+    color: darkgray;
+      /* figure out how to get it lighter text */
+  }
+
+  </style>
+</head>
+<body>
+  <div id="content-container">
+    <div id="qr-code-container">
+      <img src="images/image-qr-code.png" alt="qr code">
+    </div>
+    <div id="header-print-container">
+      <h2>Improve your front-end skills by builidng projects</h2>
+      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+  </div>
+</body>
+</html>
